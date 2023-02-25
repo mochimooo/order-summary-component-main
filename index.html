@@ -1,37 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Order summary card</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" type="style/text" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-  Order Summary
+  <body>
+    <main>
+        <article>
+          <div class="Order-Summary">
+            <img src="images/illustration-hero.svg" alt="a happy animated woman is holding a phone and dancing to the music from her headphone">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
 
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <div class="wrapper flex-group">
+              <h1 class="bold">Order Summary</h1>
+            
+              <p class="Order-Summary__description">
+                You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+              </p>
+            
+              <div class="Order-Summary__Plan flex-group">
+                <div class="flex-group">
+                    <img src="images/icon-music.svg" alt="an icon of music note">
+                    <div class="Order-Summary__Plan--box flex-group1">
+                      <span class="bold">Annual Plan</span>
+                      $59.99/year
+                    </div>
+                </div>
+                <u class="hover">
+                  Change
+                </u>
+              </div>
+            
+              <div class="button">
+                Proceed to Payment
+              </div>
+                
+              <div class="hover-1">
+                <b>Cancel Order</b>
+              </div>
+            </div>
+            
+          </div>
+        </article>
+    </main>
+    
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Mochimooo</a>.
+      </div>
+    </footer>
+  </body>
 </html>
