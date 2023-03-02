@@ -86,13 +86,13 @@ h6 {
 
 /*general styling*/
 body {
+    min-height: 100vh;
     font-family: var(--ff-base);
     color: var(--clr-neutral-200);
     background-color: var(--clr-primary-150);
     font-weight: var(--fw-light);
     font-size: 16px;
 
-    /*for this project only*/
     display: grid;
     place-content: center;
 
@@ -102,13 +102,35 @@ body {
     background-size: 100% 45%;
 }
 
+/*
+@media (prefers-color-scheme: dark) {
+    body {
+      color: #eee;
+      background: #121212;
+    }
+
+    .wrapper .bold {
+        color:#bf99ea;
+    }
+
+    p {
+        color:#eee;
+    }
+
+    .wrapper {
+        color:#eee;
+        background-color:#000000e8;
+    }
+}
+
+
 @media (max-width: 400px) {
     body {
         background-image:
             url(images/pattern-background-mobile.svg);
         background-size: 100% 30%;
     }
-}
+}*/
 
 .wrapper {
     --content-padding: 1.5rem;
@@ -180,6 +202,7 @@ b{
     cursor:pointer;
     color:hsl(228, 45%, 44%);
     font-weight: var(--fw-bold);
+    text-decoration: underline;
 }
 
 .hover-1:is(:hover,:focus){
@@ -190,11 +213,10 @@ b{
 
 /*footer styling*/
 .attribution {
-    font-size: 11px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1rem;
+    font-size: 0.85rem;
+    position: fixed;
+    bottom: 0.5rem;
+    margin-left: 0.2rem;
 }
 
 .attribution a {
